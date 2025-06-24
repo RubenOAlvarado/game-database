@@ -136,7 +136,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Ruben** - [Your GitHub Profile](https://github.com/yourusername)
+**Ruben** - - [Ruben O. Alvarado](https://github.com/RubenOAlvarado)
+- [LinkedIn](https://www.linkedin.com/in/ruben-alvarado-molina-9020010/)
+- [X (twitter)](https://twitter.com/RubenOAlvarado)
+- [Instagram](https://www.instagram.com/alvaradorubo/)
 
 ## 🙏 Acknowledgments
 
