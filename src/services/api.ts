@@ -7,3 +7,11 @@ export async function fetchGames({ query }: { query: string }){
   }
   return response.json();
 }
+
+export async function fetchGameData({ slug }: { slug: string }) {
+  const response = await fetch(`${API_ENDPOINT}/games/${slug}`);
+  if (!response.ok) {
+    throw new Error(`Error fetching game data: ${response.statusText}`);
+  }
+  return response.json();
+}

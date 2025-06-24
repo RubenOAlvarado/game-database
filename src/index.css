@@ -1,9 +1,79 @@
 @import "tailwindcss";
 
-.text-gradient{
-  @apply bg-linear-to-r from-[#5c2bd9] via-[#fb6e6e] to-[#ffe137] bg-clip-text text-transparent;
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+/* Animación de aparición */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto glassmorphism personalizado */
+.glass-card {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Mejoras para el scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Personalizar scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Mejoras para dispositivos móviles */
+@media (max-width: 768px) {
+  .text-gradient {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .genre-pill {
   @apply bg-red-800 rounded-full px-2 text-gray-300 text-sm;
+}
+
+.main-button {
+  @apply bg-blue-400 rounded-md p-2;
+}
+
+.platform-pill {
+  @apply bg-blue-800 rounded-full px-2 text-gray-300 text-sm;
 }
